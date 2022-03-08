@@ -24,6 +24,11 @@ export class PoolClient<T> {
     });
   }
 
+  public async disconnect(): Promise<undefined> {
+    ipc.disconnect(this.id);
+    return;
+  }
+
   private async connectSocket() {
     return await new Promise((resolve) => {
       ipc.connectTo(this.id, () => {

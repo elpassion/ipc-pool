@@ -7,10 +7,13 @@ export class JestServer<T> extends PoolServer<T> {
     poolFactory: Factory<T>,
     poolOptions: Options
   ) {
-    const server = new JestServer<T>(id);
+    const server = new JestServer<T>(id, {
+      factory: poolFactory,
+      opts: poolOptions,
+    });
     // @ts-ignore
     global.__POOL_SERVER__ = server;
-    await server.start(poolFactory, poolOptions);
+    await server.start();
   }
 
   public static async stop() {
