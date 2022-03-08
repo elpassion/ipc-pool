@@ -32,5 +32,6 @@
   "bugs": {
     "url": "https://github.com/elpassion/ipc-pool/issues"
   },
-  "homepage": "https://github.com/elpassion/ipc-pool#readme"
+  "homepage": "https://github.com/elpassion/ipc-pool#readme",
+  "private": false
 }
