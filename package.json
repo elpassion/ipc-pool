@@ -9,7 +9,7 @@
     "node-ipc": "^10.1.3"
   },
   "name": "@elpassion/ipc-pool",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A reusable IPC Pool Server and client",
   "main": "lib/index.js",
   "scripts": {
